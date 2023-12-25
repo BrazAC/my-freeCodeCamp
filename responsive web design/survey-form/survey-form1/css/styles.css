@@ -1,0 +1,105 @@
+body{
+    font-size: 18px;
+    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3796.jpg?w=1380&t=st=1703296343~exp=1703296943~hmac=86dbac226e586d9f2193add9d3c10add63a515588cb4170bd55939f3c2de89d0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background-color: rgb(238, 236, 153);*/
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+    text-align: center;
+    color: rgb(73, 73, 73);
+    width: clamp(520px, 36%, 600px);
+    margin: 50px auto  30px auto;
+}
+h1{
+    margin-bottom: -10px;
+}
+p{
+    font-style: italic;
+}
+
+form{
+    width: clamp(520px, 35%, 600px);
+    margin: 0 auto;
+    background-color: rgba(56, 142, 153, 0.349);
+    color: rgb(73, 73, 73);
+    padding: 38px 1.7%;
+    border-radius: 5px;
+}
+
+fieldset{
+    margin-bottom: 10px;
+    border-width: 0px;
+}
+
+.camp1 > input{
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 98%;
+    height: 38px;
+    padding-left: 2%;
+    border-width: 0px;
+
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+
+    display: block;
+}
+.camp1 > label, .camp4 > legend, .camp2 > legend{
+    margin-bottom: 5.2px;
+
+    display: block;
+
+}
+.camp1 > select, .camp3 > select{
+    margin-bottom: 9px;
+    border-radius: 4px;
+    width: 101%;
+    height: 40.5px;
+    padding-left: 2%;
+    border-width: 0px;
+
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+}
+
+.camp2 > label, .camp3 > label, .camp4 > label, textarea{
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea{
+    width: 98%;
+    height: 100px;
+    border-radius: 3px;
+    padding-left: 2%;
+    padding-top: 2%;
+    border-width: 0px;
+
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+}
+
+.buttomSubmit{
+    margin-bottom: 30px;
+    margin-left: 16px;
+    border-radius: 4px;
+    width: 96%;
+    height: 47px;
+    border-radius: 3px;
+    border-width: 0px;
+
+    color: rgb(73, 73, 73);
+    background-color: rgb(24, 218, 7);
+}
+
+.labelsFooter{
+    display: block;
+}
+a{
+    color: rgb(0, 0, 0);
+}

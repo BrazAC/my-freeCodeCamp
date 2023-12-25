@@ -1,0 +1,43 @@
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    margin: 0 auto;
+    background-color:azure;
+}
+p, figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contentBody{
+    width: clamp(700px, 60%, 800px);
+    background-color: rgb(101, 173, 173);
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.img1, .img2{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border-width: 0px;
+}
+
+.finalForm, h2, h3{
+    margin-left: 18px;
+}
+
+footer{
+    margin-top: 50px;
+}
