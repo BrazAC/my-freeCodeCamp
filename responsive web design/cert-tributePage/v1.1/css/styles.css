@@ -1,0 +1,227 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+    }
+a{
+  text-decoration: none;
+}
+body{
+    background-color:black;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 6vh;
+    background-color: #FFC857;
+    display: flex;
+    font-size: 18px;
+    font-weight: 550;
+}
+#divLogoHeader{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+#divLogoHeader > img{
+    width: 70px;
+}
+*/
+#divMenuNav{
+    width: 50%;
+    height: 100%;
+
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+#divMenuNav > nav > ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 0px;
+
+    margin: 0px;
+    padding: 0px;
+}
+.navOptions{
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 6vh;
+    width: 110px;
+}
+#divMenuNav > nav{
+    margin-right: 15px;
+}
+.aMenu{
+    margin: auto auto;
+    width: 100%;
+    color: #1C1C1C;
+}
+.navOptions:hover{
+    background-color: #1c1c1c; 
+    color: white;
+}
+main{
+    text-align: center;
+
+}
+#about{
+    background-image: url('about-wall.jpeg');
+    background-position: center;
+    background-size: 1900px;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about > div > h1{
+    font-size: 62px;
+    color: white;
+    margin-bottom: -10px;
+}
+#about > div > p{
+    font-size: 28px;
+    color: #FFC857;
+    font-style: italic;
+}
+#community{
+    background-image: linear-gradient(90deg,#1c1c1c, #474350a9);
+    width: 100%;
+    height: 100vh;
+}
+.community-title{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+.community-title > h1{
+    margin-top: 50px;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 5px;
+}
+.community-title > div{
+    background-color: #FFC857;
+    width: 300px;
+    height: 2px;
+}
+.community-images{
+    overflow: hidden;
+    margin: 0 auto;
+
+    width: 60%;
+    height: 80vh;
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: flex-start;
+
+    justify-content: space-around;
+    column-gap: 0px;
+}
+.community-images-cases{
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: #FFC857;
+    
+}
+.community-images-cases > p{
+    margin-top: 4px;
+    font-size: 18px;
+    
+}
+.community-images-cases > p:hover{
+    margin-top: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+#img01{
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    
+}
+#img01:hover{
+    box-sizing: border-box;
+    object-fit: cover;
+    border: 0.5px solid #FFC857;
+   
+}
+#social{
+    background-image: url("https://media.discordapp.net/attachments/1178519457757397042/1182832043604848730/image.png?ex=6598962f&is=6586212f&hm=9ed8de4c18cd86e9ae274c0aee692efc0c8018e6cb6e3a4a2fda349fa6420022&=&format=webp&quality=lossless&width=1207&height=599");
+    background-position: center;
+    background-size: cover;
+ 
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#social > div{
+    width: 55vw;
+    border-radius: 4px;
+    font-size: 32px;
+    color: white;
+    background-color: #1c1c1ccb;
+}
+#social > div > h1{
+    margin-bottom: -10px;
+}
+#social > div > p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+#social > div > a > img{
+    width: 36px;
+    height: 25px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+#mainFooterBar{
+    background-color: #FFC857;
+    width: 100%;
+    height: 0.5vh;
+    margin-bottom: 0px;
+}
+footer{
+    display: flex;
+    background-image: linear-gradient(90deg,#1c1c1c, #474350a9);
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+footer > p>  a{
+    color: #FFC857;
+}
+footer > p>  a:hover{
+    color: white;
+}
