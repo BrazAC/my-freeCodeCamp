@@ -7,85 +7,89 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav id="nav-bar">
-            <header>Flexbox basic overview</header>   
-            <ul>
-              <li><a class="nav-link" href="#Introduction_to_Flexbox">Introduction to Flexbox</a></li>
-              <li><a class="nav-link" href="#Flex_Container_and_Items">Flex Container and Items</a></li>
-              <li><a class="nav-link" href="#Flex_Container_Properties">Flex Container Properties</a></li>
-              <li><a class="nav-link" href="#Flex_Item_Properties_and_Alignment">Flex Item Properties and Alignment</a></li>
-              <li><a class="nav-link" href="#Responsive_Design_with_Flexbox">Responsive Design with Flexbox</a></li>
-            </ul>
-          </nav>
+    <header id="header-top">
     </header>
-    <main id="main-doc">
-        <section id="Introduction_to_Flexbox" class="main-section">
-            <header>Introduction to Flexbox</header>
-            <p>Flexbox, short for Flexible Box, is a powerful layout model in CSS that revolutionized 
-                the way developers create responsive and dynamic web layouts. Its primary goal is to 
-                offer a more efficient and predictable way to distribute available space among elements 
-                within a container, regardless of their size or the container's dimensions. Flexbox 
-                operates on two main components: the flex container and its child items.</p>
-            <p>By applying <code>display: flex</code> or <code>display: inline-flex</code> to an element, it becomes a flex 
-                container, and its immediate children become flex items. This paradigm shift in layout 
-                design introduces a more intuitive approach to handling both alignment and distribution 
-                of space among these items.</p>
-            
-        </section>
-        <section id="Flex_Container_and_Items" class="main-section">
-            <header>Flex Container and Items</header>
-            <p>The flex container establishes a flex formatting context, which dictates how its child 
-                elements are displayed and behaves according to Flexbox rules. Meanwhile, flex items 
-                are the individual components within the container that can be flexibly arranged, 
-                reordered, aligned, and sized.</p>
-            <p>The power of Flexbox lies in its ability to control layout direction, stacking, and 
-                alignment without having to resort to traditional CSS approaches, such as floats or 
-                positioning. This model empowers developers to create dynamic, responsive, and adaptive 
-                designs efficiently.</p>
-            <code></code>
-        </section>
-        <section id="Flex_Container_Properties" class="main-section">
-            <header>Flex Container Properties</header>
-            <p>Flexbox provides several properties that dictate the layout and alignment of items within the flex container.</p>
-            <p>Bla bla bla insert text</p>
-            <ul>
-                <li>justify-content and align-items: The <code>justify-content</code> property controls the distribution of space between 
-                    flex items along the main axis of the flex container, allowing for precise alignment. Meanwhile, <code>align-items</code> 
-                    aligns the items along the cross axis, ensuring consistent alignment vertically.</li>
-                <li>flex-direction and flex-wrap: The <code>flex-direction</code> property defines the primary axis of the flex container, enabling 
-                    layout control in rows or columns. Additionally, <code>flex-wrap</code> permits items to wrap onto multiple lines or prevent wrapping, 
-                    influencing how items flow within the container.</li>
-            </ul>
-            
-        </section>
-        <section id="Flex_Item_Properties_and_Alignment" class="main-section">
-            <header>Flex Item Properties and Alignment</header>
-            <p>Flex items possess properties that define their behavior within the flex container.</p>
-            <p>Bla bla bla insert text</p>
-            <ul>
-                <li>flex-grow, flex-shrink, and flex-basis: These properties determine how flex items grow, shrink, 
-                    and establish their initial size within the flex container. <code></code>flex-grow allows items to expand proportionally, 
-                    <code></code>flex-shrink controls their ability to shrink, and <code></code>flex-basis sets the initial size.
-                </li>
-                <li>align-self and order: <code>align-self</code> offers individual flex item alignment overrides, allowing specific items to 
-                    deviate from the container's alignment settings. order permits rearranging items within the container's display 
-                    order, enabling the manipulation of the visual order without changing the underlying HTML structure.</li>
-            </ul>
-        </section>
-        <section id="Responsive_Design_with_Flexbox" class="main-section">
-            <header>Responsive Design with Flexbox</header>
-            <p> Flexbox is a game-changer in responsive web design. Its fluid nature allows elements to dynamically adjust their layout and 
-                size based on the available space, making it a valuable tool in crafting adaptable and responsive interfaces.</p>
-            <ul>
-                <li>Flexibility and Adaptability: One of Flexbox's main strengths is its adaptability to various screen sizes and devices. 
-                    Its ability to create layouts that fluidly respond to changes in screen dimensions significantly simplifies development, 
-                    resulting in a consistent and engaging user experience across different devices and viewports.</li>
-            </ul>
-            <p>This comprehensive breakdown explores the core principles of Flexbox, encompassing its structure, container and item properties, 
-                responsive design capabilities, and its pivotal role in crafting dynamic and adaptive layouts within web development</p>
-        </section>
-    </main>
+    <div id="div-navBar-main">
+        <header>
+            <nav id="nav-bar">
+                <header>Flexbox basic overview</header>   
+                <ul>
+                <li><a class="nav-link" href="#Introduction_to_Flexbox">Introduction to Flexbox</a></li>
+                <li><a class="nav-link" href="#Flex_Container_and_Items">Flex Container and Items</a></li>
+                <li><a class="nav-link" href="#Flex_Container_Properties">Flex Container Properties</a></li>
+                <li><a class="nav-link" href="#Flex_Item_Properties_and_Alignment">Flex Item Properties and Alignment</a></li>
+                <li><a class="nav-link" href="#Responsive_Design_with_Flexbox">Responsive Design with Flexbox</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-doc">
+            <section id="Introduction_to_Flexbox" class="main-section">
+                <header>Introduction to Flexbox</header>
+                <p>Flexbox, short for Flexible Box, is a powerful layout model in CSS that revolutionized 
+                    the way developers create responsive and dynamic web layouts. Its primary goal is to 
+                    offer a more efficient and predictable way to distribute available space among elements 
+                    within a container, regardless of their size or the container's dimensions. Flexbox 
+                    operates on two main components: the flex container and its child items.</p>
+                <p>By applying <code>display: flex</code> or <code>display: inline-flex</code> to an element, it becomes a flex 
+                    container, and its immediate children become flex items. This paradigm shift in layout 
+                    design introduces a more intuitive approach to handling both alignment and distribution 
+                    of space among these items.</p>
+                
+            </section>
+            <section id="Flex_Container_and_Items" class="main-section">
+                <header>Flex Container and Items</header>
+                <p>The flex container establishes a flex formatting context, which dictates how its child 
+                    elements are displayed and behaves according to Flexbox rules. Meanwhile, flex items 
+                    are the individual components within the container that can be flexibly arranged, 
+                    reordered, aligned, and sized.</p>
+                <p>The power of Flexbox lies in its ability to control layout direction, stacking, and 
+                    alignment without having to resort to traditional CSS approaches, such as floats or 
+                    positioning. This model empowers developers to create dynamic, responsive, and adaptive 
+                    designs efficiently.</p>
+                <code></code>
+            </section>
+            <section id="Flex_Container_Properties" class="main-section">
+                <header>Flex Container Properties</header>
+                <p>Flexbox provides several properties that dictate the layout and alignment of items within the flex container.</p>
+                <p>Bla bla bla insert text</p>
+                <ul>
+                    <li>justify-content and align-items: The <code>justify-content</code> property controls the distribution of space between 
+                        flex items along the main axis of the flex container, allowing for precise alignment. Meanwhile, <code>align-items</code> 
+                        aligns the items along the cross axis, ensuring consistent alignment vertically.</li>
+                    <li>flex-direction and flex-wrap: The <code>flex-direction</code> property defines the primary axis of the flex container, enabling 
+                        layout control in rows or columns. Additionally, <code>flex-wrap</code> permits items to wrap onto multiple lines or prevent wrapping, 
+                        influencing how items flow within the container.</li>
+                </ul>
+                
+            </section>
+            <section id="Flex_Item_Properties_and_Alignment" class="main-section">
+                <header>Flex Item Properties and Alignment</header>
+                <p>Flex items possess properties that define their behavior within the flex container.</p>
+                <p>Bla bla bla insert text</p>
+                <ul>
+                    <li>flex-grow, flex-shrink, and flex-basis: These properties determine how flex items grow, shrink, 
+                        and establish their initial size within the flex container. <code></code>flex-grow allows items to expand proportionally, 
+                        <code></code>flex-shrink controls their ability to shrink, and <code></code>flex-basis sets the initial size.
+                    </li>
+                    <li>align-self and order: <code>align-self</code> offers individual flex item alignment overrides, allowing specific items to 
+                        deviate from the container's alignment settings. order permits rearranging items within the container's display 
+                        order, enabling the manipulation of the visual order without changing the underlying HTML structure.</li>
+                </ul>
+            </section>
+            <section id="Responsive_Design_with_Flexbox" class="main-section">
+                <header>Responsive Design with Flexbox</header>
+                <p> Flexbox is a game-changer in responsive web design. Its fluid nature allows elements to dynamically adjust their layout and 
+                    size based on the available space, making it a valuable tool in crafting adaptable and responsive interfaces.</p>
+                <ul>
+                    <li>Flexibility and Adaptability: One of Flexbox's main strengths is its adaptability to various screen sizes and devices. 
+                        Its ability to create layouts that fluidly respond to changes in screen dimensions significantly simplifies development, 
+                        resulting in a consistent and engaging user experience across different devices and viewports.</li>
+                </ul>
+                <p>This comprehensive breakdown explores the core principles of Flexbox, encompassing its structure, container and item properties, 
+                    responsive design capabilities, and its pivotal role in crafting dynamic and adaptive layouts within web development</p>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>Made by <a id="github-link" href="https://github.com/BrazAC ">BrazAC</a></p>
     </footer>
