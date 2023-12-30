@@ -1,3 +1,8 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+    }
 body{
     color: #fff;
    margin: 0px;
@@ -33,56 +38,50 @@ footer a{
         margin: 0px auto;
         width: clamp(720px, 76.3vw, 970px);
         height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #header-top img{
+        margin-right: 20px;
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
     }
     #div-navBar-main{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    #nav-bar{
+    
+    #navbar{
         width: clamp(150px, 15vw, 200px);
         height: 100%;
         padding: 50px 10px;
         color: rgb(182, 180, 180);
-        
+        position: sticky;
+        top: 70px;
+        display: inline;
     }
-    #nav-bar header{
+    #navbar header{
         font-weight: 600;
         
     }
-    #nav-bar ul{
+    #navbar ul{
         list-style-type:symbols();
         width: 100%;
         margin-left: -23px;
         font-size: 85%;
         
     }
-    #nav-bar ul li{
+    #navbar ul li{
         margin-bottom: 20px;
     }
-    #nav-bar a{
+    #navbar a{
         color: rgb(182, 180, 180);
         text-decoration: none;
     }
-    #back-to-top{
-        margin: 0 auto;
-        border: rgb(182, 180, 180) solid 1px;
-        border-radius: 5px;
-        width: 80px;
-        height: 20px;
-        position: sticky;
-        top: 80vh;
-    }
-    #back-to-top a{
-        display: block;
-        font-size: 85%;
-        margin: auto auto auto 6px;
-    }
-    #back-to-top a:hover{
-        color: #fff;
-        cursor: pointer;
-    }
-
     #main-doc{
         width: clamp(450px, 50vw, 650px);
         height: 100%;
