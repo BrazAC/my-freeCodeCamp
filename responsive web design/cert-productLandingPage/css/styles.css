@@ -94,33 +94,342 @@ a:hover{
         color: white;
     }
     #about > h2{
+        font-size: 2rem;
         margin-top: 25px;
-        
+        text-shadow: 2px 2px black;
+        color: var(--color3);
+    }
+    #about > h2 > span{
+        color: var(--color2);
+    }
+    #about > p{
+        text-shadow: 2px 2px black;
+        color: var(--color3);
     }
     #menu{
+        border-bottom: 1px solid white;
         width: 100%;
-        height: 75vh;
+        height: 786.5px;
         background-color: var(--color1);
 
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 1vw;
+    }
+    .menuHolder{
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: var(--color2);
+
+        width: clamp(200px, 15vw, 300px);
+        height: clamp(200px, 15vw, 300px);
+
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0%;
+    }
+    .menuHolder p{
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        text-align: center;
+        font-size: clamp(14px, 1vw, 1vw);
+        color: white;
+        background-color: var(--color4);
+        width: 100%;
+        height: 15%;
+        
+        font-weight: 500;
+    }
+    .menuSelectButton{
+        color: white;
+        margin-top: 0.5vw;
+        text-align: center;
+        font-size: clamp(14px, 1.1vw, 1.1vw);
+        background-color: #3E8241;
+        width: 50%;
+        height: 13%;
+        border-radius: 2px;
+        font-weight: 500;
+    }
+    .menuSelectButton:hover{
+        cursor: pointer;
+        background-color: var(--color4);
+        transition: 1s;
+        color: grey;
+    }
+    #menu-açaiWithStranberrys{
+        width: 100%;
+    }
+    #menu-açaiWithCupuaçu{
+        width: 100%;
+    }
+    #menu-açaiWithHoney{
+        width: 100%;
+        height: 66.6%;
     }
     #partnership{
         width: 100%;
-        height: 25vh;
+        height: 395.5px;
+        background-color: var(--color1);
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: var(--color1);
+        gap: 10px;
+    }
+    #partnership > h2{
         text-align: center;
+        color: white;
+        font-size: 2rem;
+    }
+    #partnership > p{
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+    #partnership > form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    #email{
+        font-size: 1.3rem;
+        width: 400px;
+        height: 50px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: none;
+        color: grey;
+        border-radius: 5px;
+    }
+    #submit{
+        background-color: var(--color2);
+        width: 401px;
+        height: 50px;
+        font-size: 1.3rem;
+        text-align: center;
+        color: black;
+        margin: none;
+        border-radius: 5px;
     }
     footer{
         background-color: var(--color4);
         width: 100%;
-        height: 50px;
+        height: 70px;
         text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 900px){
+    #header{
+        font-size: 14px;
+        
+        background-color: var(--color4);
+        width: 100%;
+        height: 9.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        gap: 10px;
+
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+
+        box-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #nav-bar{
+        width: 100%;
+        height: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header-img{
+        margin-top: 20px;
+    }
+
+    #nav-bar ul{
+        color: white;
+        width: 400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    #about{
+        margin-top: 9.5rem;
+        width: 100%;
+        height: 782px;
+
+        z-index: -1;
+        background-image: url("https://indoamazonacai.com/wp-content/uploads/2023/01/image-1-1268x800.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        color: white;
+    }
+    #about > h2{
+        font-size: 2rem;
+        margin-top: 25px;
+        text-shadow: 2px 2px black;
+        color: var(--color3);
+    }
+    #about > h2 > span{
+        color: var(--color2);
+    }
+    #about > p{
+        text-shadow: 2px 2px black;
+        color: var(--color3);
+    }
+    #menu{
+        border-bottom: 1px solid white;
+        width: 100%;
+        height: 786.5px;
+        background-color: var(--color1);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+    .menuHolder{
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: var(--color2);
+
+        width: clamp(200px, 15vw, 300px);
+        height: clamp(200px, 15vw, 300px);
+
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0%;
+    }
+    .menuHolder p{
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        text-align: center;
+        font-size: clamp(14px, 1vw, 1vw);
+        color: white;
+        background-color: var(--color4);
+        width: 100%;
+        height: 15%;
+        
+        font-weight: 500;
+    }
+    .menuSelectButton{
+        color: white;
+        margin-top: 0.5vw;
+        text-align: center;
+        font-size: clamp(14px, 1.1vw, 1.1vw);
+        background-color: #3E8241;
+        width: 50%;
+        height: 13%;
+        border-radius: 2px;
+        font-weight: 500;
+    }
+    .menuSelectButton:hover{
+        cursor: pointer;
+        background-color: var(--color4);
+        transition: 1s;
+        color: grey;
+    }
+    #menu-açaiWithStranberrys{
+        width: 100%;
+    }
+    #menu-açaiWithCupuaçu{
+        width: 100%;
+    }
+    #menu-açaiWithHoney{
+        width: 100%;
+        height: 66.6%;
+    }
+    #partnership{
+        width: 100%;
+        height: 395.5px;
+        background-color: var(--color1);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    #partnership > h2{
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+    }
+    #partnership > p{
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+    #partnership > form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    #email{
+        font-size: 1.3rem;
+        width: 400px;
+        height: 50px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: none;
+        color: grey;
+        border-radius: 5px;
+    }
+    #submit{
+        background-color: var(--color2);
+        width: 401px;
+        height: 50px;
+        font-size: 1.3rem;
+        text-align: center;
+        color: black;
+        margin: none;
+        border-radius: 5px;
+    }
+    footer{
+        background-color: var(--color4);
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
