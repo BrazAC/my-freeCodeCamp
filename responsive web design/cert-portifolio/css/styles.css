@@ -27,13 +27,13 @@ html{
         display: flex;
         align-items: center;
         justify-content: center;
-
-        position: fixed;
-        
+        position: fixed; 
     }
     #navbar{
+    
         width: 20rem;
-        
+        position: fixed;
+        top: 0px;
     }
     #navbar > ul{
         list-style: none;
@@ -57,7 +57,6 @@ html{
         background-color: var(--violet1);
         transition: 1s;
     }
-    
     #welcome-section{
         background-color: var(--pink);
         text-align: center;
@@ -78,7 +77,6 @@ html{
         color: var(--violet1);
         font-size: 22px;
     }
-    
     #projects{
         background-color: var(--lavender);
         text-align: center;
@@ -107,7 +105,7 @@ html{
 
         
     }
-    #project-tile{
+    .project-tile{
         border-radius: 8px;
         background-color: white;
 
@@ -116,7 +114,7 @@ html{
         justify-content: center;
         flex-direction: column;
     }
-    #project-tile > img{
+    .project-tile > img{
         object-fit: cover;
         width: 100%;
         height: 100%;
@@ -178,7 +176,5 @@ html{
         height: 5vh;
         background-color: var(--violet2);
         border-top: 2px solid white;
-        
-
     }
 }
