@@ -25,34 +25,81 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px
 }
 #main-container0{
     width: 400px;
-    height: 200px;
+    height: 250px;
     background-color: var(--color1);
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    gap: 20px;
+    gap: 30px;
+}
+#div-text-input{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
 }
 #text-input{
-    width:50%;
-    height: 100%;
+    width:70%;
+    height: 150%;
+    background-color: var(--color2);
+    border-radius: 4px;
+
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+
+    border: 4px solid var(--color1dark);
 }
 #check-btn{
-    width: 50%;
-    height: 100%;
+    width: 30%;
+    height: 185%;
+    border: none;
+    border: 4px solid var(--color1dark);
 }
+
 #result{
-    width: 75%;
+    color: white;
+    width: 85%;
     height: 25%;
     background-color: var(--color1dark);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #main-container1{
     width: 400px;
     height: 100px;
     background-color: var(--color2dark);
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#main-container1 > p{
+    width: 75%;
+    background-color: var(--color2dark);
+    font-weight: 500;
+    text-align: center;
+}
+footer{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
 }
