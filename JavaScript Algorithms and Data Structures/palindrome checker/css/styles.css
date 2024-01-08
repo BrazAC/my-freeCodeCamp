@@ -68,6 +68,13 @@ main{
     border: none;
     border: 4px solid var(--color1dark);
 }
+#check-btn:hover{
+    background-color: rgb(206, 196, 240);
+}
+#check-btn:active{
+    background-color: black;
+    color: white;
+}
 #result{
     color: white;
     width: 85%;

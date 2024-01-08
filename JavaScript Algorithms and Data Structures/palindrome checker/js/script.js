@@ -44,20 +44,3 @@ function verifyAndRun(){
 }
 
 buttonCheck.addEventListener('click',()=>{verifyAndRun()});
-
-buttonCheck.addEventListener('mousedown', ()=>{
-    buttonCheck.style.backgroundColor = 'black';
-    buttonCheck.style.color = 'white';
-});
-buttonCheck.addEventListener('mouseup', ()=>{
-    buttonCheck.style.backgroundColor = 'white';
-    buttonCheck.style.color = 'black';
-});
-buttonCheck.addEventListener('mouseout', ()=>{
-    buttonCheck.style.backgroundColor = 'white';
-    buttonCheck.style.color = 'black';
-});
-buttonCheck.addEventListener('mouseover', ()=>{
-    buttonCheck.style.backgroundColor = 'rgb(206, 196, 240)';
-    buttonCheck.style.color = 'black';
-});
