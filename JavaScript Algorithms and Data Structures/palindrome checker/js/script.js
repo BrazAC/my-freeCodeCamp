@@ -3,36 +3,26 @@ const buttonCheck = document.getElementById('check-btn');
 const resultDiv = document.getElementById('result');
 
 function allInOne(inputElement){
-    const inputData = {data: inputElement.value};
-    const clearedString = inputData.data.replace(/[^a-zA-Z\d:]/g, "");
-    const superClearedString = clearedString.toLowerCase();
-    const zeroBaseCharAmout = superClearedString.length;
-    const repeatComparation = {value:""};
+    const inputData = inputElement.value;
+    const clearedString = inputData.replace(/[^a-zA-Z\d:]/g, "").toLowerCase();
+    let zeroBaseCharAmount = clearedString.length;
+    let counter = 0;
 
-    const proveArray = [];
-
-    if(zeroBaseCharAmout % 2 == 0){
-        repeatComparation.value = zeroBaseCharAmout/2;
+    if(zeroBaseCharAmount % 2 == 0){
+        zeroBaseCharAmount = zeroBaseCharAmount/2;
     }else{
-        repeatComparation.value = Math.trunc(zeroBaseCharAmout/2);
+        zeroBaseCharAmount = Math.trunc(zeroBaseCharAmount/2);
     }
 
-    for(let i = 0; i <= (repeatComparation.value - 1); i++){
-        
-        if(superClearedString[i] === superClearedString[(superClearedString.length - 1) - i]){
-            proveArray.push('1'); 
+    for(let j = 0; j <= (zeroBaseCharAmount - 1); j++){
+        if(clearedString[j] !== clearedString[(clearedString.length - 1) - j]){
+            resultDiv.textContent = `${inputData} is not a palindrome`;
+            break;
         }else{
-            proveArray.push('0');
+            counter ++;
         }
     }
-
-    if(proveArray.indexOf('0') !== -1){
-        console.log("NÃO É");
-        resultDiv.textContent = `${inputData.data} is not a palindrome`;
-    }else{
-        console.log("É");
-        resultDiv.textContent = `${inputData.data} is a palindrome`;
-    } 
+    if(counter == zeroBaseCharAmount){resultDiv.textContent = `${inputData} is a palindrome`};
 }
 
 function verifyAndRun(){
@@ -43,4 +33,4 @@ function verifyAndRun(){
     }
 }
 
-buttonCheck.addEventListener('click',()=>{verifyAndRun()});
+buttonCheck.addEventListener('click', verifyAndRun);
