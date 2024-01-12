@@ -11,6 +11,32 @@
     --greenOnedark: #14342f;
     --blackOne: #0C0D0B;
 }
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 body{
     width: 100%;
     height: 100vh;
@@ -26,6 +52,8 @@ h1{
     text-align: center;
     color: white;
     width: 400px;
+
+    animation: fade-down 2s;
 }
 #container-converter{
     background-color: var(--greenOne);
@@ -41,6 +69,8 @@ h1{
 
     border: 2px solid white;
     margin-bottom: 300px;
+
+    animation: fade-in 4s;
 }
 #number{
     background-color: var(--greenOnedark);
@@ -63,6 +93,7 @@ h1{
     border-radius: 2px;
 
     font-size: 18px;
+    
 }
 #convert-btn:hover{
     background-color: var(--blueone);
@@ -70,18 +101,31 @@ h1{
     font-size: 19px;
     transition: 0.4s;
     cursor: pointer;
+
+    
 }
 #convert-btn:active{
     background-color: var(--blueonedark);
     color: white;
-} 
+}
+
 #output{
     background-color: white;
     text-align: center;
     border-radius: 2px;
+    font-size: 24px;
 
     width: 75%;
     height: 30%;
 
     border: 2px solid var(--greenOnedark);
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.makeFade{
+    animation: fade-out 2s;
+    animation: fade-in 2s;
 }
