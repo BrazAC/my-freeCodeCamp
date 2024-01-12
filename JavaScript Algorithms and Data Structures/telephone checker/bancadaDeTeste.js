@@ -18,15 +18,9 @@ function validCharAmount(userInput){
 }
 
 function validCharDisposal(userInput){
-    const noSpaceInput = userInput.replace(/\s/g, "");
-    
-    if(noSpaceInput.length === 10){
-
-    }else{
-
-    }
-    return noSpaceInput;
-}
+    const regex = /1?\s?(\d{3})|(\(\d{3}\))\s?-?\d{3}\s?-?\d{4}/;
+    return regex.test(userInput);
+} 
 
 console.log(validCharDisposal(userInput));
 
