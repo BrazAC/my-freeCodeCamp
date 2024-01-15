@@ -4,7 +4,7 @@ const purchaseButton = document.getElementById('purchase-btn');
 const priceDisplay = document.getElementById('show-price');
 
 let price = 19.5;
-let cid = [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]];
+let cid = [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 70], ["TWENTY", 120], ["ONE HUNDRED", 500]];
 priceDisplay.textContent = price;
 
 function getDataAndRun(price, cash, cid){
@@ -21,6 +21,8 @@ function checkCashRegister(price, cash, cid) {
   let cidSum = 0;
   let changeAtribute = [];
   let divText = '';
+
+  console.log(totalChange);
 
   const cidValue = cid.reverse();
   const coinValue = [[0.01, "PENNY"], [0.05, "NICKEL"], [0.1, "DIME"], [0.25, "QUARTER"], [1, "ONE"], [5, "FIVE"], [10, "TEN"], [20, "TWENTY"], [100, "ONE HUNDRED"]].reverse();
@@ -90,9 +92,10 @@ function checkCashRegister(price, cash, cid) {
         divText += `${change.change[i][0]}: $${change.change[i][1]} `;
         i--;
       }
+      console.log(divText);
       changeDiv.textContent = divText;
       return;
-      
+
     }else{
       if(totalChange > 0){
         change.status = "INSUFFICIENT_FUNDS";
@@ -109,6 +112,7 @@ function checkCashRegister(price, cash, cid) {
     }
     changeDiv.textContent = divText;
   }
+  console.log(totalChange);
 }
   
 purchaseButton.addEventListener('click', function(){
