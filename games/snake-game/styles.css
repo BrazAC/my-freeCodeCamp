@@ -14,13 +14,14 @@ body, .snake{
 }
 
 .game-board{
-    border-radius: 27px;
+    border-radius: 28px;
     
     display: grid;
     grid-template-columns: repeat(20, 20px);
     grid-template-rows: repeat(20, 20px);
     margin: 5px;
-    background-color: white;
+
+    background-color: #E2E2E2;
 }
 
 .game-border-1{
@@ -50,10 +51,24 @@ img{
     color: rgb(170, 238, 237);
 }
 
+@keyframes foodAnimation{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .snake{
-    background-color: aqua;
+    background-color: black;
+    border: #E2E2E2 1px solid;
 }
 .food{
     background-color: red;
-    border: black 5px solid;
+    border: black 2px solid;
+    animation: foodAnimation 1 infinite;
 }
