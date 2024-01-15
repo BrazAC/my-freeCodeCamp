@@ -103,6 +103,7 @@ function move(){
 
 //5 - Start the game 
 function startGame(){
+    
     gameStarted = true;
     instructionText.style.display = 'none';
     logo.style.display = 'none';
@@ -115,26 +116,33 @@ function startGame(){
 
 //6 - Keypress listener
 function handleKeyPress(event){
-    if((!gameStarted && event.code === 'Space') || 
-    (!gameStarted && event.key === ' ')){
-        startGame();
-    }
-    else{
-        switch (event.key) {
-            case 'ArrowUp':
-                direction = 'up';
-                break;
-            case 'ArrowDown':
-                direction = 'down';
-                break;
-            case 'ArrowLeft':
-                direction = 'left';
-                break;
-            case 'ArrowRight':
-                direction = 'right';
-                break;
+    
+   
+    
+        if((!gameStarted && event.code === 'Space') || 
+        (!gameStarted && event.key === ' ')){
+            
+            startGame();
+            
         }
-    }
+        else{
+            switch (event.key) {
+                case 'ArrowUp':
+                    direction = 'up';
+                    break;
+                case 'ArrowDown':
+                    direction = 'down';
+                    break;
+                case 'ArrowLeft':
+                    direction = 'left';
+                    break;
+                case 'ArrowRight':
+                    direction = 'right';
+                    break;
+            }
+        }
+    
+   
 }
 
 //7 - Increase speed if eat food
@@ -170,6 +178,7 @@ function checkColision(){
 
 //9 - Reset game function
 function resetGame(){
+    
     updateHighScore();
     stopGame();
     snake = [{ x: 10, y: 10 }];
